@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+:root {
+    --crvena: #ef233c;
+    --tamnoSiva: rgb(65, 65, 65);
+    --svetloSiva: rgb(247, 241, 241);
+    --bela: #fff;
+    --transition: .3s ease;
+    --fontSize: 16px
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: var(--fontSize);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kaushan Script', cursive;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+button {
+    padding: 15px 30px;
+    background: var(--crvena);
+    color: var(--bela);
+    border: none;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+button:hover {
+    cursor: pointer;
+    background: var(--tamnoSiva);
+}
+/*****************
+header
+******************/
+header {
+    background-image: linear-gradient(rgba(65, 65, 65,.3),rgba(65, 65, 65,.3)),url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    background: var(--bela);
+    line-height: .7;
+    position: relative;
+    top: 20px;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 10px 20px 0 15px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+header nav ul li a {
+    color: var(--tamnoSiva);
+    transition: var(--transition);
+}
+header nav ul li a:hover {
+    color: var(--crvena);
+}
+header nav div {
+    padding-left: 20px;
+}
+header nav h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: var(--tamnoSiva);
+}
+header nav span {
+    color: var(--crvena);
+}
+header nav p {
+    font-size: .9rem;
+}
+header .text {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bela);
+}
+header .text h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+}
+header .text p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 50px 20px 50px;
+}
+/*****************
+about
+******************/
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50vh;
+}
+.about article {
+    flex: 0 0 48%;
+}
+.about article:last-child {
+    background-image: url(img/one.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.about article:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+}
+.about span {
+    text-transform: uppercase;
+    color: var(--crvena);
+    font-size: .9rem;
+    font-weight: 700;
+}
+.about span::after {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: var(--crvena);
+    margin: 10px 0 20px 0;
+}
+.about  article p {
+    font-size: .9rem;
+    padding: 30px 0; 
+}
+/*****************
+text
+******************/
+.onama {
+    background: var(--svetloSiva);
+    text-align: center;
+    padding: 50px 0;
+}
+.onama span {
+    text-transform: uppercase;
+    color: var(--crvena);
+    font-size: .9rem;
+    font-weight: 700;
+}
+.onama span::after {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: var(--crvena);
+    margin: 30px auto 30px auto;
+}
+.onama article .intro {
+    font-size: .9rem;
+    padding: 30px 200px; 
+}
+.onama .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.onama .row div {
+    flex: 0 0 31%;
+    padding: 30px 30px 0 30px;
+    text-align: left;
+}
+.onama .row div p {
+    font-size: .9rem;
+}
+.onama .row button {
+    background: transparent;
+    padding: 0;
+    color: var(--crvena);
+    text-decoration: underline;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.onama .row button:hover {
+    cursor: pointer;
+    color: var(--tamnoSiva);
+}
+/*****************
+blanco
+******************/
+.blanco {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 30px;
+}
+.blanco span {
+    text-transform: uppercase;
+    color: var(--crvena);
+    font-size: .9rem;
+    font-weight: 700;
+    padding-bottom: 100px;
+}
+/*****************
+team
+******************/
+.team {
+    text-align: center;
+}
+.team span {
+    text-transform: uppercase;
+    color: var(--crvena);
+    font-size: .9rem;
+    font-weight: 700;
+    padding-bottom: 100px;
+}
+.team h2 {
+    font-size: 2.2rem;
+    padding-bottom: 30px;
+}
+.team .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team .row div {
+    flex: 0 0 50%;
+}
+.team .row .img1 {
+    background-image: url(img/people1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.team .row .img2 {
+    background-image: url(img/people2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.team .row .img3 {
+    background-image: url(img/people3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.team .row .text {
+    text-align: left;
+    padding: 50px;
+    background: var(--svetloSiva);
+}
+.team .row .text h3{
+    font-size: 1.7rem;
+    color: var(--crvena);
+}
+.team .row .text h5 {
+    padding-bottom: 20px;
+}
+.team .row .text p {
+    font-size: .9rem;
+    padding-bottom: 30px;
+}
+.team .row .social {
+    font-size: 1.3rem;
+}
+.team .row a {
+    color: var(--crvena);
+    margin-right: 100px;
+}
+.team .row a:hover {
+    color: var(--tamnoSiva);
+}
+.team .row2 .text {
+    order: -1;
+    text-align: right;
+}
+.team .row2 a {
+    margin: 0 0 0 100px;
+}
+/*****************
+works
+******************/
+.worksHeader {
+    text-align: center;
+    background: var(--crvena);
+    padding: 30px 0;
+    color: var(--bela);
+}
+.worksHeader span {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    padding-bottom: 100px;
+}
+.worksHeader h2 {
+    font-size: 2.2rem;
+}
+
+.works .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.works .row img {
+    width: 100%;
+    display: block;
+}
+.works .row .col {
+    flex: 0 0 50%;
+}
+.works .row .colSecond {
+    flex: 0 0 50%;
+}
+.works .row .row2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 357px;
+}
+
+.works .row .row2 .col1 {
+    flex: 0 0 50%;
+    background-image: url(img/project11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.works .row .row2 .col2 {
+    flex: 0 0 50%;
+    background-image: url(img/project3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.works .row .row2 .col3 {
+    flex: 0 0 50%;
+    background-image: url(img/project4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.works .row .row2 .col4 {
+    flex: 0 0 50%;
+    background-image: url(img/project5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.worksFooter {
+    text-align: center;
+    background: var(--crvena);
+    padding: 10px 0;
+    color: var(--bela);
+}
+/*****************
+counter
+******************/
+.counter {
+    text-align: center;
+    padding: 50px 30px;
+}
+.counter .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.counter .row div {
+    flex: 0 0 23%;
+}
+.counter h2 {
+    font-size: 2.5rem;
+    color: var(--crvena);
+    padding-bottom: 20px;
+}
+.counter h3 {
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding-bottom: 20px;
+}
+.counter p {
+    font-size: .9rem;
+}
+/*****************
+footer
+******************/
+footer .intro {
+    text-align: center;
+}
+footer .intro span {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    padding-bottom: 100px;
+}
+footer .intro h3 {
+    font-size: 2.2rem;
+}
+footer .intro p {
+    font-size: .9rem;
+}
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+footer .row div {
+    flex: 0 0 31%;
+    padding: 60px 40px;
+}
+footer .row div span {
+    color: var(--crvena);
+}
+footer .row div h3 {
+    font-size: 1.3rem;
+}
+footer .row div h4 {
+    padding-bottom: 40px;
+    font-size: 1.3rem;
+}
+footer .row div p {
+    font-size: .9rem;
+}
+footer .row div i {
+    color: var(--crvena);
+}
+footer .row div:nth-child(2) {
+    box-shadow: 0 0 10px var(--tamnoSiva);
+}
+/*****************
+responsive
+******************/
+@media(max-width:767px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    header nav ul li {
+        display: flex;
+        padding: 10px 30px 0 15px;
+        text-transform: uppercase;
+        font-size: .9rem;
+    }
+    header .text h1 {
+        text-align: center;
+    }
+    button {
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+    .about article {
+        flex: 0 0 100%;
+        
+    }
+    .about span {
+        margin: 0 auto;
+    }
+    .about span::after {
+        margin: 0 auto;
+    }
+    .about article:first-child {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .onama article .intro {
+        padding: 10px 10px;
+    }
+    .about article:last-child {
+        height: 200px;
+    }
+    .onama {
+        background: var(--svetloSiva);
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        top: 90px;
+    }
+    .onama .row div {
+        flex: 0 0 100%;
+        padding: 30px 30px 0 30px;
+        text-align: left;
+    }
+    .team .row div {
+        flex: 0 0 100%;
+        height: 300px;
+    }
+    .team .row2 .text {
+        order: 0;
+        text-align: right;
+    }
+    .team .row .text {
+        text-align: center;
+        padding: 10px;
+    }
+    .team .row .social {
+        font-size: 1.3rem;
+        display: flex;
+    }
+    .team .row a {
+        margin: 0px 0 0 48px;
+    }
+    .team .row2 a {
+        margin: 0px 0 0 48px;
+    }
+    .works .row .col {
+        flex: 0 0 100%;
+    }
+    .works .row .colSecond {
+        flex: 0 0 100%;
+    }
+    .works .row .row2 .col1 {
+        flex: 0 0 100%;
+    }
+    .works .row .row2 .col2 {
+        flex: 0 0 100%;
+    }
+    .counter .row div {
+        flex: 0 0 100%;
+    }
+    footer .row div {
+        flex: 0 0 100%;
+        padding: 60px 40px;
+    }
+    
+}
+
+
+
+
+
+
+

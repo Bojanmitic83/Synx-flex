@@ -43,6 +43,9 @@ button:hover {
     cursor: pointer;
     background: var(--tamnoSiva);
 }
+.dropdownLink {
+    display: none;
+}
 /*****************
 header
 ******************/
@@ -456,6 +459,9 @@ responsive
         text-transform: uppercase;
         font-size: .9rem;
     }
+    header .text {
+        height: 55vh;
+    }
     header .text h1 {
         text-align: center;
     }
@@ -536,6 +542,43 @@ responsive
         flex: 0 0 100%;
         padding: 60px 40px;
     }
+    /*hamburger meni*/
+    .navbar {
+        padding: 25px;
+    }
+    ul.topnav li a.nav-link {
+        display: none;
+    }
+    ul.topnav li.dropdownLink {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    ul.topnav li.dropdownLink a {
+        text-decoration: none;
+    }
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+        background: transparent;
+        padding: 20px;
+    }
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+        line-height: 2;
+    }
+    ul.topnav.responsive li {
+        position: relative;
+        top: 15px;
+        right: 25px;
+    }
+
     
 }
 
